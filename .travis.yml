@@ -33,5 +33,7 @@ script:
   #  'project.bc' should be replaced with the make output for your project (e.g. 'yourproject.so')
   #  [-Ox] represents build optimisations (discussed in the next section).
   - ls -al
-  - ls -al libyara
-  - emcc yara.o libyara/libyara.o -o yara.js
+  - ls -al libyara/.libs
+
+  #- emcc yara.o -o yara.js -s MAIN_MODULE=1 EXPORT_ALL=1
+  #- emcc libyara/libyara.o -o libyara.js -s EXPORT_ALL=1
