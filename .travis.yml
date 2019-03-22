@@ -34,4 +34,4 @@ script:
   #  [-Ox] represents build optimisations (discussed in the next section).
   - ls -al
   - ls -al libyara
-  - emcc yara.o -o yara.js
+  - emcc yara.o libyara/libyara.o -o yara.js
