@@ -20,6 +20,7 @@ script:
 - ls -al libyara/.libs
 - emcc yara.o -o yara.js -s MAIN_MODULE=1 -s EXPORT_ALL=1
 deploy:
+  skip_cleanup: true
   provider: releases
   api_key:
     secure: KkgsluWNmrBx4s9robGtMCUdWsfOcpHTyOUn+qUAEzhoL2hv58JGI0auvusXRYl5po3DdZpuBrpoII1WVtdW/gf+Dc/Uhlns1v27DFvTYSd3Ahy2trrr/R1dsmFbIJMDLaWynLP+EAx9jBbwMAO9mKuvwL1NYq69vdHXtvK3ygfY3lq8STWE561gvaFPGPRNYhvflmjTcwwMlx3jDqCVopj2+/8X0QSPgk+rVA/sFPtrxxEuvF9BluMU4A5eNaAhlR+xfNls7UeoMqi5JE3Iv4kFyvaa2vY3lakVeaNDOHkB1JBTM6DhB5hssQrljGReqwL8fIuBV+zfi9iT/R9Je/gCnk1Jov5JG2veXcYBdPpRA/IaNBd38gvk0DOHZNgH3ghqX9E6jt8Tfh9K4kyMCAOtdHh8nNJ1CxrTQ/6sFJGRHjXbDEVQ/wltFoNT4sVqjx6cRrC6KX7k+l2WkWqYUKV1GG5uwJiObdKKS4YY9S1POdF53/lK0u3Qn2/Z5jTsvhPoNYK7pGZyX3HUQYXzPZTy//dG4DbGpJSxpAStncAAOIAdhyms5QhVB0VQsHUJ0jpxg2QWFBnAQTDsBeFjaHPPEuApi4fRTQxUZtzEcFUf2GSwF6Iy6xywfxWIts+DNlayq3K6voKa4zQCs9pz3wseyie4dEJ1J0WQkV0MuFY=
