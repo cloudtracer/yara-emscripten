@@ -35,5 +35,6 @@ script:
   - ls -al
   - ls -al libyara/.libs
 
-  #- emcc yara.o -o yara.js -s MAIN_MODULE=1 EXPORT_ALL=1
-  #- emcc libyara/libyara.o -o libyara.js -s EXPORT_ALL=1
+  - emcc libyara.so.3.9.0 -o libyara.3.9.0.js -s SIDE_MODULE=1 -s EXPORT_ALL=1
+  #- emcc yara.o -o yara.js -s MAIN_MODULE=1 -s EXPORT_ALL=1
+  #- emcc libyara/libyara.o -o libyara.js -s SIDE_MODULE=1 -s EXPORT_ALL=1
