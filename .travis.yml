@@ -33,4 +33,4 @@ script:
   #  'project.bc' should be replaced with the make output for your project (e.g. 'yourproject.so')
   #  [-Ox] represents build optimisations (discussed in the next section).
   - ls
-  - emcc yara.so -o yara.js
+  - emcc yara -o yara.js
