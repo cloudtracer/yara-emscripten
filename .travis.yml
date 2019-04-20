@@ -17,7 +17,7 @@ script:
 - emconfigure ./configure
 - emmake make
 - ls -al libyara/.libs
-- emcc yara.o -o yara.js -s MAIN_MODULE=1 -s EXPORT_ALL=1
+- EMCC_FORCE_STDLIBS=1 emcc yara.o -o yara.js -s MAIN_MODULE=1 -s EXPORT_ALL=1
 - ls -al
 deploy:
   skip_cleanup: true
